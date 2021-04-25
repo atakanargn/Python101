@@ -6,7 +6,6 @@
 # 90'lı yıllarda ortaya çıkıyor
 # Günümüzde 2 versiyonu var; Python2 ve Python3
 
-# Lemniskat Python Dersleri
 # < işareti ile açıklama satırları oluşturabilirsiniz.
 
 """
@@ -93,7 +92,7 @@ isim = "Atakan Argın"
 isim[0]  # A
 isim[-1] # n
 
-# TUPLE ( ÇOKUZ )
+# TUPLE
 test = ("Python","C","C++")
 test[0]
 test[-1]
