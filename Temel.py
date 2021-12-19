@@ -14,6 +14,10 @@ Aynı zamanda 3 tane çift tırnak işareti ile de
 satırları oluşturabilirsiniz.
 """
 
+'''
+Burası açıklama satırı
+'''
+
 # ARITMETIK İŞLEMLER
 print(21+2)    # Toplama işlemi
 print(1293-25) # Çıkartma işlemi
@@ -32,6 +36,7 @@ math.pow(2,2)
 2**2
 
 # Kök almaya yarar
+# squareroot
 math.sqrt(4)  
 4**(1/2)
 
@@ -46,7 +51,6 @@ math.e
 \\ -> \ işareti
 """
 print("Ilk satır\nYeni satır\n\n2 alt satırda\n\tAlt satırda ve ileride")
-
 """
 print() fonksiyonunun
 sep yani separator
@@ -70,10 +74,16 @@ print("""
 yani print() fonksiyonu içinde de kullanabiliriz
 """)
 
+print(""" Bu bir açıklama satırıydı
+ancak bunu print() fonksiyonu içine
+yerleştirirsem, ekstra \\n gibi kaçık karakterleri kullanmadan
+çok satırlı yazılar yazmama yarayacak
+""")
+
 # DEĞİŞKEN TANIMLAMA VE VERİ TİPLERİ
 tamsayi = 2            # int()   -> integer
 ondalikli_sayi = 3.14  # float() -> float
-kelime = "Lemniskat"   # str()   -> string
+kelime = "Arge ve Inovasyon"   # str()   -> string
 
 # Yukarıdaki tanımlamalarda değişkenlere değerlere atanmıştır.
 # = işareti atama operatörü olarak geçmektedir.
@@ -89,8 +99,6 @@ toplam = toplam + 3
 
 # STRINGLER ( KARAKTER DİZİLERİ, DİZELER, CÜMLELER, KELİMELER )
 isim = "Atakan Argın"
-isim[0]  # A
-isim[-1] # n
 
 # TUPLE
 test = ("Python","C","C++")
@@ -136,10 +144,12 @@ boy = float( input("Boyunuz?\n>> ") )
 
 # MANTIKSAL OPERATÖRLER
 # BOOLEAN CEBİRİ
-not
-and
-or 
+not 
+and 
+or  
 # örnekler
+# boolean
+# bool
 a = True
 b = False
 a and b
@@ -158,6 +168,7 @@ a and not(b)
 != -> EŞİT DEĞİLDİR
 
 = -> ATAMA OPERATÖRÜ 
+
 # ÖRNEKLER
 ...
 
@@ -167,9 +178,14 @@ a and not(b)
 "Ja" in "Java"
 
 # KARAR YAPILARI
+# Koşullu ifadeler
 # Eğer durum True değerindeyse komutlar çalışır
 if durum==True:
     komutlar
+
+durum=True
+if durum == True:
+    print("Durum doğruymuş.")
 
 # Eğer durum True değerindeyse komutlar çalışır
 if durum==True:
@@ -177,6 +193,13 @@ if durum==True:
 # Değilse 2.komutlar çalışır
 else:
     2.komutlar
+
+
+durum=True
+if durum == True:
+    print("Durum doğruymuş.")
+else:
+    print("Durum yanlışmış.")
 
 if durum:
     komutlar
@@ -187,14 +210,40 @@ elif durum3:
 else:
     4.komutlar
 
+yas = input("Yaşınız : ")
+
+if (yas < 0):
+    print("Geçersiz bir yaş girdiniz.")
+elif yas < 7:
+    print("Okula başlayamaz.")
+elif yas >= 7 and yas <= 14:
+    print("Ilkokula gidebilir.")
+elif yas > 18:
+    print("Üniversite")
+else:
+    print("Sen yaşlanmışsın kardeşim.")
+
 # DÖNGÜLER
+
+print(1)
+print(2)
+print(3)
+print(4)
+print(5)
+print(6)
+print(7)
+print(8)
+print(9)
+print(10)
+
+
 
 # while döngüsü
 """ Belirlenen koşul sağlandığı sürece çalışan döngüdür
 komutları döngü bloğunun içinde olmalıdır.
 Pythonda tab'lar çok önemlidir.
 """
-while durum ya da koşul:
+while (durum ya da koşul):
     komutlar
     
 sayac = 0
